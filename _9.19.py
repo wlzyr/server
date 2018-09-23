@@ -5,7 +5,7 @@ import threading
 
 def date_analysis(conn,add):
     a = "3"
-    date = conn.recv(1024)
+    date = conn.recv(2024)
     conn.send(a.encode("utf-8"))
     conn.close()
 
